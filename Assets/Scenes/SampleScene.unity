@@ -521,6 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 1709814586}
+  bird: {fileID: 1187092835}
 --- !u!1 &586915582
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +533,7 @@ GameObject:
   - component: {fileID: 586915583}
   m_Layer: 5
   m_Name: Game Over Screen
-  m_TagString: Untagged
+  m_TagString: gameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,6 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 1709814586}
+  bird: {fileID: 1187092835}
 --- !u!1 &1709814585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1254,7 @@ MonoBehaviour:
   pipe: {fileID: 7556758781228848264, guid: 333b290a73cee93569f71b6eb88a86f6, type: 3}
   spawnRate: 4
   heightOffset: 10
+  gameOverScreen: {fileID: 586915582}
 --- !u!4 &2099275562
 Transform:
   m_ObjectHideFlags: 0
