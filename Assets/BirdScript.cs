@@ -8,18 +8,19 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
-    // Start is called before the first frame update
+    public AudioSource flap;
+
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive)
         {
             MyRigidbody.velocity = Vector2.up * flapStrength;
+            flap.Play();
         }
     }
 

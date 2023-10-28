@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Logic
   - gameOver
+  - PointSound
   layers:
   - Default
   - TransparentFX

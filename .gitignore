@@ -18,3 +18,7 @@
 .idea
 Assets/Scripts/.idea
 *.vsidx
+
+# Other files
+Assets/externalAssets
+Assets/externalAssets.meta

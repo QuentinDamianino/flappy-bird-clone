@@ -5,7 +5,8 @@ using UnityEngine;
 public class PipeMiddleScript : MonoBehaviour
 {
     public LogicScript logic;
-    // Start is called before the first frame update
+    public AudioSource audioSource;
+
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
@@ -22,6 +23,7 @@ public class PipeMiddleScript : MonoBehaviour
         if (collison.gameObject.layer == 3)
         {
             logic.addScore(1);
+            audioSource.Play();
         }
     }
 }
